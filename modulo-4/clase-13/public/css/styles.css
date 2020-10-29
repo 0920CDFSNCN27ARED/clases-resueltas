@@ -1,0 +1,60 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.header{
+    background-color: #EAC926;
+}
+
+.header ul li{
+    list-style-type: none;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.main{
+    background-color: #ebebeb;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.main div{
+    background-color: #fff;
+}
+
+.main i,
+.discount{
+    color: #39b54a;
+}
+
+.footer{
+    color: #666;
+}
+
+.footer i{
+    color: #1259c3;
+}
