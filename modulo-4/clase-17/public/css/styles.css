@@ -1,0 +1,53 @@
+#toggle-menu-button {
+  margin: 20px 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #0044aa;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#toggle-menu-button:hover {
+  cursor: pointer;
+  background-color: #0022aa;
+}
+
+#main-nav {
+  display: none;
+}
+
+#truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.info-container > i {
+  background-color: white;
+}
+
+.header-top {
+  display: flex;
+}
+
+.price {
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+}
+
+.info-container {
+  border-top: solid 2px gray;
+}
