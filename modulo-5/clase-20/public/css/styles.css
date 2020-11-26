@@ -1,0 +1,92 @@
+.header-top > #search-form {
+  width: 40%;
+}
+
+#search-form > .search-input > input {
+  width: calc(100% - 24px);
+}
+#search-form > .search-input {
+  width: 100%;
+}
+
+#toggle-menu-button {
+  margin: 20px 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #0044aa;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#toggle-menu-button:hover {
+  cursor: pointer;
+  background-color: #0022aa;
+}
+
+#main-nav {
+  font-size: 14px;
+}
+
+#truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 20px;
+  top: -15px;
+
+  transition: transform 1s;
+}
+
+.details {
+  height: 100px;
+}
+
+.product:hover #truck-icon {
+  transform: rotate(360deg);
+}
+
+.info-container > i {
+  background-color: white;
+}
+
+.price {
+  max-width: 40%;
+  margin-right: 10px;
+}
+
+.discount {
+  flex-grow: 5;
+  vertical-align: bottom;
+  line-height: 22px;
+}
+
+.info-container {
+  border-top: solid 2px gray;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.search-input {
+  width: fit-content;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.search-input > input,
+button {
+  border: none;
+  background-color: transparent;
+}

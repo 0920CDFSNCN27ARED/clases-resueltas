@@ -1,0 +1,50 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+}
+
+.background-main {
+  background-color: #eac926;
+}
+
+.background-light {
+  background-color: #fff;
+}
+
+.color-dark {
+  color: #000;
+}
+
+.color-secondary {
+  color: #39b54a;
+}
+.color-terciary {
+  color: #1259c3;
+}
+
+.color-muted {
+  color: #666;
+}
+
+.font-size-1 {
+  font-size: 12px;
+}
+
+.font-size-2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.font-size-3 {
+  font-size: 18px;
+}
+
+.font-size-4 {
+  font-size: 24px;
+}
