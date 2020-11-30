@@ -3,23 +3,40 @@ const app = express();
 
 app.use(express.static("public"));
 
+// Configuracion de nuestro View Engine
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
 app.listen(3000, () => {});
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
-});
-app.get("/prueba", (req, res) => {
-  res.sendFile(__dirname + "/views/prueba.html");
-});
+function getProducts() {
+  const dbJson = fs.readFileSync(__dirname + "/db.json", { encoding: "utf-8" });
+  return JSON.parse(dbJson);
+}
 
-app.post("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+app.get("/", (req, res) => {
+  const products = getProducts();
+
+  res.render("index", { products: products });
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(__dirname + "/views/login.html");
+  res.render("login");
 });
 
 app.get("/register", (req, res) => {
-  res.sendFile(__dirname + "/views/register.html");
+  res.render("register");
+});
+
+const fs = require("fs");
+
+app.get("/products/:category/:id/details", (req, res) => {
+  const products = getProducts();
+  const requiredProduct = products.find((prod) => {
+    return prod.id == req.params.id;
+  });
+  if (!requiredProduct) {
+    res.status(404).send("404 not found. <br> ¡Houston, poseemos problemas!");
+  }
+  res.render("product-detail", { product: requiredProduct });
 });

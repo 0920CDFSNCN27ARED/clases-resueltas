@@ -90,3 +90,25 @@ button {
   border: none;
   background-color: transparent;
 }
+
+.product-img {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-img > img {
+  max-height: 600px;
+}
+
+.product-details {
+  width: 30%;
+}
+
+.product-article {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.product-price {
+}
