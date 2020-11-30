@@ -1,0 +1,39 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 10;
+}
+
+.login input,
+.register input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.login input[type="submit"],
+.register input[type="submit"] {
+  color: #fff;
+  background-color: #0044aa;
+  border-radius: 5px;
+}
+
+.login input[type="submit"]:hover,
+.register input[type="submit"]:hover {
+  background-color: #0022aa;
+}
+
+.register input[type="reset"] {
+  color: #fff;
+  background-color: #aa0044;
+}
+
+.register input[type="reset"]:hover {
+  background-color: #cc1155;
+}
