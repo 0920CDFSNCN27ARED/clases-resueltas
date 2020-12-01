@@ -17,21 +17,22 @@
         <section>
             <h3 class="font-size-4 margin-y-20">Basado en tu última visita</h3>
             <div class="product-container">
-                <% for( let i = 0; i < products.length; i++ ) { %>
-                <%- include("partials/product",{product:products[i]}) %>
-                <% } %>
+                <% products.forEach((product,i)=>{%>
+                <%- include("/partials/product", {product: product}) %>
+                <%}) %>
             </div>
         </section>
         <section>
             <h3 class="font-size-4 margin-y-20">Ofertas</h3>
             <div class="product-container">
                 <% for( let i = 0; i < products.length; i++ ) { %>
-                <%- include("partials/product",{product:products[i]}) %>
+                <%- include("/partials/product",{product:products[i]}) %>
                 <% } %>
             </div>
+            <%= saludo() %>
         </section>
     </main>
-    <%- include("partials/footer") %>
+    <%- include("/partials/footer") %>
 </body>
 
 </html>

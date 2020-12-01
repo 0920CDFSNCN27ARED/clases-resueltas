@@ -20,9 +20,11 @@
             <div class="product-details">
                 <h1 class="product-title font-size-6"><%= product.name %></h1>
                 <p class="product-price-discount font-size-3 color-secondary">
-                    <span class="strike-through">$ <%= product.price %></span> / <%= product.discount %>% OFF
+                    <span class="strike-through">$ <%= toThousand(product.price) %></span> / <%= product.discount %>%
+                    OFF
                 </p>
-                <p class="product-price font-size-7">$ <%= product.price - (product.price*(product.discount/100)) %></p>
+                <p class="product-price font-size-7">$
+                    <%= toThousand(product.price - (product.price*(product.discount/100))) %></p>
             </div>
         </article>
 
