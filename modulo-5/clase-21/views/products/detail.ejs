@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <%- include("partials/head-base", {
+    <%- include("../partials/head-base", {
         title:"Bienvenidos a MercadoLiebre"
     }) %>
 </head>
 
 <body>
-    <%- include("partials/header") %>
+    <%- include("../partials/header") %>
 
     <main class="container">
         <h2 class="padding-y-20 color-muted">Detalle del producto: <%= product.name %> </h2>
@@ -29,7 +29,7 @@
         </article>
 
     </main>
-    <%- include("partials/footer") %>
+    <%- include("../partials/footer") %>
 </body>
 
 </html>

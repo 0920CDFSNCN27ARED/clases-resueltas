@@ -1,30 +1,56 @@
-const fs = require("fs");
-
-function getProducts() {
-  const dbJson = fs.readFileSync(__dirname + "/../db.json", {
-    encoding: "utf-8",
-  });
-  return JSON.parse(dbJson);
-}
-
-function getOne(req, res) {
-  const products = getProducts();
-  const requiredProduct = products.find((prod) => {
-    return prod.id == req.params.id;
-  });
-  if (requiredProduct == null) {
-    return res
-      .status(404)
-      .send("404 not found. <br> ¡Houston, poseemos problemas!");
-  }
-  const toThousand = require("../utils/toThousand");
-
-  res.render("product-detail", {
-    product: requiredProduct,
-    toThousand: toThousand,
-  });
-}
+const getProducts = require("../utils/get-products");
+const toThousand = require("../utils/to-thousand");
 
 module.exports = {
-  getOne: getOne,
+    getOne: (req, res) => {
+        const products = getProducts();
+        const requiredProduct = products.find((prod) => {
+            return prod.id == req.params.id;
+        });
+        if (requiredProduct == null) {
+            return res
+                .status(404)
+                .send("404 not found. <br> ¡Houston, poseemos problemas!");
+        }
+
+        res.render("products/detail", {
+            product: requiredProduct,
+            toThousand,
+        });
+    },
+
+    getAll: (req, res) => {
+        const products = getProducts();
+
+        res.render("products/list", {
+            products,
+            toThousand,
+        });
+    },
+    showCreate: (req, res) => {
+        res.render("products/create");
+    },
+
+    showEdit: (req, res) => {
+        const products = getProducts();
+        const requiredProduct = products.find((prod) => {
+            return prod.id == req.params.id;
+        });
+        if (requiredProduct == null) {
+            return res
+                .status(404)
+                .send("404 not found. <br> ¡Houston, poseemos problemas!");
+        }
+        res.render("products/edit", {
+            product: requiredProduct,
+        });
+    },
+    create: (req, res) => {
+        const message = "Product Created: " + JSON.stringify(req.body);
+        res.send(message);
+    },
+    edit: (req, res) => {
+        const message = "Product Edited: " + JSON.stringify(req.body);
+        res.send(message);
+    },
 };
