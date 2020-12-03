@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include("../partials/head-base", {
+        title:"Bienvenidos a MercadoLiebre"
+    }) %>
+</head>
+
+<body>
+    <%- include("../partials/header") %>
+
+    <section class="banner">
+        <img class="width-100" src="/images/img-home-banner.jpg" alt="Banner de ofertas">
+    </section>
+    <main class="container">
+        <section>
+            <h3 class="font-size-4 margin-y-20">Nuestros productos</h3>
+            <div class="product-container">
+                <% products.forEach((product,i)=>{%>
+                <%- include("product-card", {product: product}) %>
+                <%}) %>
+            </div>
+        </section>
+    </main>
+    <%- include("../partials/footer") %>
+</body>
+
+</html>
