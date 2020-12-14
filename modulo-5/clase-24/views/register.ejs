@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include("partials/head-base", {
+        title: "Register"
+    }) %>
+
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+    <main class="register container">
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Nombre y apellido">
+            <input type="text" name="user" placeholder="Nombre de usuario">
+            <input type="email" name="email" placeholder="E-mail">
+            <div>
+                <label for="birth_date">Fecha de nacimiento</label>
+            </div>
+            <div>
+                <input type="date" name="birth_date" id="birth_date">
+            </div>
+            <input type="text" name="addres" placeholder="Domicilio">
+            <h4>Perfil del usuario</h4>
+            <input type="radio" name="profile" value="buy" id="buy">
+            <label for="buy">Comprador</label>
+            <input type="radio" name="profile" value="sell" id="sell">
+            <label for="sell">Vendedor</label>
+            <h4>Intereses</h4>
+            <input type="checkbox" name="interests" value="a" id="a">
+            <label for="a">Electro</label>
+            <input type="checkbox" name="interests" value="b" id="b">
+            <label for="b">Moda</label>
+            <input type="checkbox" name="interests" value="c" id="c">
+            <label for="c">Hogar</label>
+            <input type="checkbox" name="interests" value="d" id="d">
+            <label for="d">Juguetería</label>
+            <input type="checkbox" name="interests" value="e" id="e">
+            <label for="e">Vida sana</label>
+            <h4>Elegí tu foto de usuario</h4>
+            <input type="file" name="avatar">
+            <br>
+            <br>
+            <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <br>
+            <br>
+        </form>
+    </main>
+
+    <%- include("partials/footer") %>
+</body>
+
+</html>
