@@ -48,7 +48,9 @@ module.exports = {
     },
     create: (req, res) => {
         const products = getProducts();
-        const newId = products[products.length - 1].id + 1;
+        const indiceUltimoProducto = products.length - 1;
+        const elUltimoProducto = products[indiceUltimoProducto];
+        const newId = elUltimoProducto.id + 1;
 
         const product = {
             id: newId,

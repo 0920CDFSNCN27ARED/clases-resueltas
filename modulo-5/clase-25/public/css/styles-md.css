@@ -1,0 +1,28 @@
+.product-container > article {
+  width: 50%;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.header-top {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.header-top > #search-form {
+  flex-grow: 10;
+}
+
+.header-top > #logo {
+  width: 25%;
+}
+
+.footer-article-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-article-container > .footer-article {
+  width: 30%;
+}

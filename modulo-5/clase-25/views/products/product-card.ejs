@@ -1,0 +1,17 @@
+<article class="product padding-15 margin-y-10">
+    <a href="/products/<%= product.category %>/<%= product.id %>/details">
+        <div class="background-light">
+            <img class="width-100" src="/images/<%= product.image %>" alt="Cafetera">
+            <div class="details flex p-relative info-container padding-20 flex-align-center">
+                <i id="truck-icon" class="fas fa-truck color-secondary background-light"></i>
+                <p class="price font-size-4 color-dark">$
+                    <%= toThousand(product.price - (product.price*(product.discount/100))) %>
+                </p>
+                <% if (product.discount > 0) { %>
+                <p class="discount font-size-3 color-secondary"><%= product.discount %>%</p>
+                <% } %>
+                <h4 class="description font-size-2 color-muted width-100"><%= product.name %></h4>
+            </div>
+        </div>
+    </a>
+</article>

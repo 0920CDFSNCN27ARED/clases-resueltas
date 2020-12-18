@@ -50,7 +50,20 @@ module.exports = {
         res.send(message);
     },
     edit: (req, res) => {
-        const message = "Product Edited: " + JSON.stringify(req.body);
-        res.send(message);
+        const products = getProducts();
+        const requiredProduct = products.find((prod) => {
+            return prod.id == req.params.id;
+        });
+
+        console.log(products);
+
+        requiredProduct.name = req.body.name
+        requiredProduct.category = req.body.category
+        requiredProduct.price = req.body.price
+        requiredProduct.discount = req.body.discount
+
+        console.log(products);
+
+        saveProducts(products);
     },
 };

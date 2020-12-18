@@ -1,17 +1,17 @@
 {
-  "name": "mercadoliebre",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "method-override": "^3.0.0",
-    "nodemon": "^2.0.6"
-  }
+    "name": "mercadoliebre",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon -e js app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "method-override": "^3.0.0",
+        "nodemon": "^2.0.6"
+    }
 }
