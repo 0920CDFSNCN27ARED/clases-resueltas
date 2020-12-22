@@ -1,0 +1,219 @@
+/products
+/products/create
+/products
+/products
+/products/detail/17
+/products/detail/17
+/products/17
+/products/17
+/images/cuidardgatito-t.jpg
+/products/create
+/products
+/products/18
+/products/18
+/images/
+/products/18
+/images/
+/products/create
+/products
+/products
+/products/19
+/products/
+/images/
+/products/create
+/products
+/products/19
+/products/19/edit
+/products/19/edit
+/products/19?_method=PUT
+/products/19?_method=PUT
+/products/detail/19
+/products/detail/19
+/products/detail/19
+/products/19
+/products/17
+/products/18
+/images/
+/products/18/edit
+/products/18?_method=PUT
+/products/18
+/
+/favicon.ico
+/register
+/auth/register
+/login
+/auth/register
+/auth/register
+/auth/login
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/register
+/auth/login
+/
+/login
+/auth/login
+/auth/login
+/auth/login
+/auth/login
+/
+/
+/
+/auth/login
+/auth/login
+/
+/auth/login
+/auth/login
+/
+/
+/auth/login
+/auth/login
+/
+/
+/
+/auth/login
+/auth/login
+/
+/
+/auth/login
+/auth/login
+/
+/
+/
+/favicon.ico
+/auth/login
+/auth/login
+/auth/login
+/auth/login
+/
+/
+/auth/login
+/auth/login
+/
+/
+/
+/
+/
+/
+/favicon.ico
+/
+/css/base.css
+/css/theme.css
+/css/styles.css
+/css/styles-md.css
+/css/styles-lg.css
+/images/logo-mercado-liebre.svg
+/images/img-home-banner.jpg
+/images/img-apple-magic-keyboard.jpg
+/images/img-mouse-logitech.jpg
+/images/img-parlante-bose.jpg
+/images/img-home-theater-sony.jpg
+/images/img-tv-samsung-smart.jpg
+/images/img-bicicleta-fierce.jpg
+/images/img-heladera-whirpool.jpg
+/images/img-macbook-pro-2019.jpg
+/images/img-cafetera-moulinex.jpg
+/images/0f85cd8a5da6591d0076d4da85cccbad
+/images/img-parlante-sony.jpg
+/images/img-samsung-galaxy-s10.jpg
+/images/img-sony-blueray.jpg
+/images/d9f64c62a1282aa80029629531311b89
+/images/img-camara-nikon.jpg
+/images/img-aire-acondicionado.jpg
+/images/img-laptop-lenovo.jpg
+/images/img-iphone-11.jpg
+/favicon.ico
+::1 - - [21/Dec/2020:23:50:52 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/auth/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+GET / 304 - - 16.275 ms
+GET / 304 - - 18.482 ms
+GET /css/base.css 304 - - 1.511 ms
+GET /css/theme.css 304 - - 0.329 ms
+GET /css/styles-lg.css 304 - - 0.832 ms
+GET /css/styles.css 304 - - 0.710 ms
+GET /css/styles-md.css 304 - - 0.704 ms
+GET /images/logo-mercado-liebre.svg 304 - - 0.906 ms
+GET /images/img-home-banner.jpg 304 - - 0.897 ms
+GET /images/img-apple-magic-keyboard.jpg 304 - - 1.323 ms
+GET /images/img-mouse-logitech.jpg 304 - - 1.451 ms
+GET /images/img-parlante-bose.jpg 304 - - 0.815 ms
+GET /images/img-home-theater-sony.jpg 304 - - 0.817 ms
+GET /images/img-tv-samsung-smart.jpg 304 - - 0.278 ms
+GET /images/img-sony-blueray.jpg 304 - - 0.458 ms
+GET /images/img-bicicleta-fierce.jpg 304 - - 0.497 ms
+GET /images/img-parlante-sony.jpg 304 - - 0.387 ms
+GET /images/0f85cd8a5da6591d0076d4da85cccbad 304 - - 0.410 ms
+GET /images/d9f64c62a1282aa80029629531311b89 304 - - 1.122 ms
+GET /images/img-cafetera-moulinex.jpg 304 - - 0.952 ms
+GET /images/img-macbook-pro-2019.jpg 304 - - 0.740 ms
+GET /images/img-samsung-galaxy-s10.jpg 304 - - 0.800 ms
+GET /images/img-heladera-whirpool.jpg 304 - - 0.899 ms
+GET /images/img-camara-nikon.jpg 304 - - 0.905 ms
+GET /images/img-aire-acondicionado.jpg 304 - - 0.894 ms
+GET /images/img-laptop-lenovo.jpg 304 - - 0.371 ms
+GET /images/img-iphone-11.jpg 304 - - 0.300 ms
+GET / 200 20415 - 9.318 ms
+GET /css/base.css 200 2046 - 2.696 ms
+GET /css/theme.css 200 740 - 3.746 ms
+GET /css/styles.css 200 1778 - 3.876 ms
+GET /css/styles-md.css 200 417 - 4.152 ms
+GET /css/styles-lg.css 200 50 - 4.781 ms
+GET /images/logo-mercado-liebre.svg 200 16321 - 1.623 ms
+GET /images/img-home-banner.jpg 200 47532 - 2.604 ms
+GET /images/img-apple-magic-keyboard.jpg 200 78823 - 2.865 ms
+GET /images/img-home-theater-sony.jpg 200 46505 - 1.926 ms
+GET /images/img-mouse-logitech.jpg 200 63236 - 2.265 ms
+GET /images/img-parlante-bose.jpg 200 228462 - 2.508 ms
+GET /images/img-sony-blueray.jpg 200 31637 - 0.762 ms
+GET /images/img-tv-samsung-smart.jpg 200 366630 - 0.928 ms
+GET /images/img-bicicleta-fierce.jpg 200 103623 - 0.636 ms
+GET /images/0f85cd8a5da6591d0076d4da85cccbad 200 61110 - 0.929 ms
+GET /images/img-parlante-sony.jpg 200 105877 - 0.935 ms
+GET /images/d9f64c62a1282aa80029629531311b89 200 61110 - 0.572 ms
+GET /images/img-cafetera-moulinex.jpg 200 151245 - 0.344 ms
+GET /images/img-samsung-galaxy-s10.jpg 200 125792 - 0.507 ms
+GET /images/img-macbook-pro-2019.jpg 200 268724 - 0.587 ms
+GET /images/img-heladera-whirpool.jpg 200 27139 - 1.176 ms
+GET /images/img-aire-acondicionado.jpg 200 25023 - 1.210 ms
+GET /images/img-camara-nikon.jpg 200 113606 - 1.074 ms
+GET /images/img-laptop-lenovo.jpg 200 189851 - 0.651 ms
+GET /images/img-iphone-11.jpg 200 89331 - 1.313 ms
+GET /favicon.ico 404 150 - 1.345 ms
+GET / 304 - - 9.903 ms
+GET /css/base.css 304 - - 0.643 ms
+GET /css/theme.css 304 - - 0.724 ms
+GET /css/styles.css 304 - - 1.253 ms
+GET /css/styles-md.css 304 - - 1.340 ms
+GET /css/styles-lg.css 304 - - 1.100 ms
+GET /images/logo-mercado-liebre.svg 304 - - 1.080 ms
+GET /images/img-home-banner.jpg 304 - - 0.887 ms
+GET /images/img-apple-magic-keyboard.jpg 304 - - 0.857 ms
+GET /images/img-mouse-logitech.jpg 304 - - 1.438 ms
+GET /images/img-parlante-bose.jpg 304 - - 0.613 ms
+GET /images/img-home-theater-sony.jpg 304 - - 0.623 ms
+GET /images/img-tv-samsung-smart.jpg 304 - - 0.804 ms
+GET /images/img-sony-blueray.jpg 304 - - 0.547 ms
+GET /images/img-bicicleta-fierce.jpg 304 - - 0.537 ms
+GET /images/img-parlante-sony.jpg 304 - - 0.247 ms
+GET /images/0f85cd8a5da6591d0076d4da85cccbad 304 - - 0.544 ms
+GET /images/d9f64c62a1282aa80029629531311b89 304 - - 0.516 ms
+GET /images/img-cafetera-moulinex.jpg 304 - - 0.380 ms
+GET /images/img-macbook-pro-2019.jpg 304 - - 0.787 ms
+GET /images/img-samsung-galaxy-s10.jpg 304 - - 0.757 ms
+GET /images/img-heladera-whirpool.jpg 304 - - 0.743 ms
+GET /images/img-camara-nikon.jpg 304 - - 0.408 ms
+GET /images/img-aire-acondicionado.jpg 304 - - 0.411 ms
+GET /images/img-laptop-lenovo.jpg 304 - - 0.213 ms
+GET /images/img-iphone-11.jpg 304 - - 0.389 ms

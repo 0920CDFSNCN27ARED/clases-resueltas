@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Pablo Baleztena",
+        "user": "piarrot",
+        "email": "pbaleztena@digitalhouse.com",
+        "birth_date": "1990-02-12",
+        "address": "Calle falsa 123",
+        "pass": "$2b$12$.vmC0VeEaGD7fI.JisO.Yepbc5VLzTS9/ZzmzAPHxBWndKu8rpWwS",
+        "avatar": "6839979062d6c4a2677076b48134efd2",
+        "admin": true
+    }
+]
