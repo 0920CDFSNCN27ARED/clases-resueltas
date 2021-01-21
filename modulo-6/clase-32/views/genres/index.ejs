@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<% const title="Genres List" %>
+
+<head>
+    <%- include("../partials/head.ejs", {title}) %>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <%- include("../components/page-title.ejs", {title}) %>
+
+        <ul>
+            <% for( let i=0; i < genres.length; i++ ) { %>
+            <li>
+                <a href="/genres/<%= genres[i].id %>">
+                    <%= genres[i].name %>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+
+</html>

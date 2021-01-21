@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<% const title="Movies List" %>
+
+<head>
+    <%- include("../partials/head.ejs", {title}) %>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <%- include("../components/page-title.ejs", {title}) %>
+
+        <ul>
+            <% for( let i=0; i < movies.length; i++ ) { %>
+            <li>
+                <a href="/movies/<%= movies[i].id %>">
+                    <%= movies[i].title %> (<%= moment(movies[i].releaseDate).format("YYYY") %>)
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+
+</html>
