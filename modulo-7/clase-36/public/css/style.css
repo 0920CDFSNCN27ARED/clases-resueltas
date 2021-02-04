@@ -21,9 +21,10 @@ body {
 
 main {
     height: 100vh;
-    font-size: 6em;
 }
 
 #timer {
+    font-size: 6em;
     font-weight: bold;
+    padding: 25px;
 }
