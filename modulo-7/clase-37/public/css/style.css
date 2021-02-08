@@ -1,0 +1,33 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#header > #logo {
+    max-height: 60px;
+}
+
+#header > #title {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main {
+    padding-top: 50px;
+    height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#timer {
+    font-size: 6em;
+    font-weight: bold;
+    padding: 25px;
+    font-family: monospace;
+}

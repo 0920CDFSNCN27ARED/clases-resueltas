@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="/js/validations.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img id="logo" src="/images/logo-dh.png" alt="Logo DH">
+        <p id="title"> Register </p>
+    </header>
+    <main>
+        <form action="/register" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input id="name" name="name" type="text" class="form-control">
+                <div id="nameFeedback" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control">
+                <div id="emailFeedback" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="password" class="form-control">
+                <div id="passwordFeedback" class="form-text"></div>
+            </div>
+            <div class="mb-3 form-check">
+                <input id="termsCheck" name="termsCheck" type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="termsCheck">Acepto los terminos y condiciones</label>
+                <div id="termsCheckFeedback" class="form-text"></div>
+            </div>
+            <div class="d-flex justify-content-between pt-5">
+                <button type="reset" class="btn btn-secondary">Resetear</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
