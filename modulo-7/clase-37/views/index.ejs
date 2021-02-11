@@ -16,8 +16,10 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
+
     <link rel="stylesheet" href="/css/style.css" />
 
+    <script type="text/javascript" src="/js/validator.min.js"></script>
     <script src="/js/validations.js"></script>
 </head>
 
@@ -27,26 +29,26 @@
         <p id="title"> Register </p>
     </header>
     <main>
-        <form action="/register" method="POST">
+        <form id="registerForm" action="/register" method="POST">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input id="name" name="name" type="text" class="form-control">
-                <div id="nameFeedback" class="form-text"></div>
+                <input id="name" name="name" type="text" class="form-control validate">
+                <div id="nameFeedback" class="feedback"></div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" type="email" class="form-control">
-                <div id="emailFeedback" class="form-text"></div>
+                <input id="email" name="email" type="email" class="form-control validate">
+                <div id="emailFeedback" class="feedback"></div>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input id="password" name="password" type="password" class="form-control">
-                <div id="passwordFeedback" class="form-text"></div>
+                <input id="password" name="password" type="password" class="form-control validate">
+                <div id="passwordFeedback" class="feedback"></div>
             </div>
             <div class="mb-3 form-check">
-                <input id="termsCheck" name="termsCheck" type="checkbox" class="form-check-input">
+                <input id="termsCheck" name="termsCheck" type="checkbox" class="form-check-input validate">
                 <label class="form-check-label" for="termsCheck">Acepto los terminos y condiciones</label>
-                <div id="termsCheckFeedback" class="form-text"></div>
+                <div id="termsCheckFeedback" class="feedback"></div>
             </div>
             <div class="d-flex justify-content-between pt-5">
                 <button type="reset" class="btn btn-secondary">Resetear</button>
