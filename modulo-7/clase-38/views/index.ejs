@@ -16,6 +16,8 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
+    <script src="/js/giphy.js"></script>
+
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -25,14 +27,14 @@
         <h1 id="title"> Giphy </h1>
     </header>
     <main class="container">
-        <form id="registerForm" class="container">
+        <form id="searchForm" class="container">
             <div class="input-group">
-                <input id="name" name="name" type="text" class="form-control validate">
+                <input id="search" name="search" type="text" class="form-control">
                 <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
         </form>
 
-        <div class="container">
+        <div id="gifContainer" class="row mt-5">
 
         </div>
     </main>
