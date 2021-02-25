@@ -10,5 +10,11 @@ module.exports = (sequelize, DataTypes) => {
         {}
     );
 
+    Actor.associate = ({ Movie }) => {
+        Actor.belongsToMany(Movie, {
+            through: "actor_movie",
+        });
+    };
+
     return Actor;
 };

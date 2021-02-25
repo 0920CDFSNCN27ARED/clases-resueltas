@@ -1,5 +1,7 @@
 const getProducts = require("../utils/get-products");
 const saveProducts = require("../utils/save-products");
+const path = require("path");
+const fs = require("fs");
 
 module.exports = {
     getOne: (req, res) => {
@@ -77,6 +79,18 @@ module.exports = {
         requiredProduct.category = req.body.category;
         requiredProduct.price = req.body.price;
         requiredProduct.discount = req.body.discount;
+
+        //Delete old image
+        if (requiredProduct.image != filename) {
+            fs.unlinkSync(
+                path.resolve(
+                    __dirname,
+                    "/../public/images/",
+                    requiredProduct.image
+                )
+            );
+        }
+
         requiredProduct.image = filename;
 
         saveProducts(products);

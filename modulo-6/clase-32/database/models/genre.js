@@ -7,5 +7,11 @@ module.exports = (sequelize, DataTypes) => {
         {}
     );
 
+    Genre.associate = ({ Movie }) => {
+        Genre.hasMany(Movie, {
+            as: "movies",
+        });
+    };
+
     return Genre;
 };

@@ -26,7 +26,21 @@ window.addEventListener("load", () => {
             event.preventDefault();
         }
     });
+
+    const passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("change",()=>{
+        validateInput("password", [
+            [validator.isLength, { min: 8 }, "Tu contraseña tiene que tener al menos 8 caracteres!"],
+            // [validator.isLength, { min: 1 }, "Tiene que tener al menos una letra minuscula!"],
+            // [validator.isLength, { min: 1 }, "Tiene que tener al menos una letra mayuscula!"],
+            // [validator.isLength, { min: 1 }, "Tiene que tener al menos un simbolo!"],
+            // [validator.isLength, { min: 1 }, "Tiene que tener al menos un numero!"],
+        ]);
+        checkErrors();
+    })
 });
+
+
 
 function clearValidations() {
     const arrayInputs = document.getElementsByClassName("validate");
@@ -43,6 +57,15 @@ function clearValidations() {
 
 function validateInput(inputId, validations) {
     const input = document.getElementById(inputId);
+    let inputValue;
+    switch (input.type) {
+        case "checkbox": {
+            inputValue = input.checked;
+            break;
+        }
+        default:
+            inputValue = input.value;
+    }
 
     let foundErrors = false;
     for (const validation of validations) {
@@ -50,15 +73,7 @@ function validateInput(inputId, validations) {
         const errorMsg = validation[validation.length - 1];
         const validationOptions =
             validation.length > 2 ? validation[1] : undefined;
-        let inputValue;
-        switch (input.type) {
-            case "checkbox": {
-                inputValue = input.checked;
-                break;
-            }
-            default:
-                inputValue = input.value;
-        }
+        
         if (!validationFunction(inputValue, validationOptions)) {
             const error = {
                 inputId,

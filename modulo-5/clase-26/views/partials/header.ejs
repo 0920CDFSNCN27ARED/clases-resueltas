@@ -12,39 +12,48 @@
             Comprá en cuotas y sin tarjeta de crédito
         </p>
     </div>
-    <div id="menu-toggle" class="text-center">
-        <i id="toggle-menu-button" class="fa fa-bars burger"></i>
-    </div>
-    <nav id="main-nav" class="hide md-flex margin-y-10 flex-space-between padding-x-15">
-        <ul class="nav-menu">
-            <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tiendas Oficiales</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
-        </ul>
-        <ul class="nav-menu">
-            <% if (!user) { %>
-                <li class="nav-item"><a class="nav-link" href="/auth/register">Creá tu cuenta <i
-                            class="far fa-id-card"></i></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/auth/login">
-                        Ingresá
-                        <i class="fas fa-sign-in-alt"></i></a>
-                </li>
 
-                <% } else { %>
-                    <li class="nav-item">
-                        <p>
-                            <%= user.name %>
-                                <i class="fas fa-user"></i>
-                        </p>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Mis compras
-                            <i class="fas fa-shopping-basket">
-                            </i></a>
-                    </li>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mercadoLiebreNavbar"
+                aria-controls="mercadoLiebreNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mercadoLiebreNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tiendas Oficiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <% if (!user) { %>
+                        <li class="nav-item"><a class="nav-link" href="/auth/register">Creá tu cuenta <i
+                                    class="far fa-id-card"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/auth/login">
+                                Ingresá
+                                <i class="fas fa-sign-in-alt"></i></a>
+                        </li>
 
-                    <% } %>
-        </ul>
+                        <% } else { %>
+                            <li class="nav-item">
+                                <p>
+                                    <%= user.name %>
+                                        <i class="fas fa-user"></i>
+                                </p>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mis compras
+                                    <i class="fas fa-shopping-basket">
+                                    </i></a>
+                            </li>
+
+                            <% } %>
+                </ul>
+            </div>
+            <!-- <div id="menu-toggle" class="text-center">
+                <i id="toggle-menu-button" class="fa fa-bars burger"></i>
+            </div> -->
+        </div>
     </nav>
 </header>

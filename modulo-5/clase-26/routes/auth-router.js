@@ -12,4 +12,8 @@ router.post("/login", authController.login);
 router.get("/register", authController.showRegister);
 router.post("/register", upload.single("avatar"), authController.register);
 
+router.get("/unauthorized", (req, res) => {
+    res.render("unauthorized");
+});
+
 module.exports = router;

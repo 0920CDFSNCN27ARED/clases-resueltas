@@ -4,6 +4,8 @@ const bcrypt = require("bcrypt");
 
 module.exports = {
     login: (req, res) => {
+        const returnUrl = req.query.returnUrl;
+
         const users = getUsers();
         const user = users.find((user) => {
             return (
@@ -16,6 +18,9 @@ module.exports = {
 
         req.session.loggedUserId = user.id;
 
+        if (returnUrl) {
+            return res.redirect(returnUrl);
+        }
         return res.redirect("/");
     },
     register: (req, res) => {

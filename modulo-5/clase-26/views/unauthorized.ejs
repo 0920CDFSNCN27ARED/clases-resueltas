@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include("partials/head-base", { title:"Te estas portando mal" }) %>
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+    Estos no son los droides que buscas...
+
+    <script>
+        setTimeout(() => {
+            window.location.replace("/home")
+        }, 10000);
+    </script>
+
+    <%- include("partials/footer") %>
+</body>
+
+</html>

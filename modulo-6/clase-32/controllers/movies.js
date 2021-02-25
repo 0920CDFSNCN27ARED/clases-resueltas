@@ -2,12 +2,16 @@ const { Movie } = require("../database/models");
 
 module.exports = {
     index: async (req, res) => {
-        const movies = await Movie.findAll();
+        const movies = await Movie.findAll({
+            include: [Movie.ACTOR_LIST_ALIAS, Movie.GENRE_ALIAS],
+        });
         res.render("movies/index", { movies });
     },
 
     detail: async (req, res) => {
-        const movie = await Movie.findByPk(req.params.id);
+        const movie = await Movie.findByPk(req.params.id, {
+            include: [Movie.ACTOR_LIST_ALIAS, Movie.GENRE_ALIAS],
+        });
         res.send(movie);
     },
 

@@ -14,7 +14,8 @@
             <% for( let i=0; i < movies.length; i++ ) { %>
             <li>
                 <a href="/movies/<%= movies[i].id %>">
-                    <%= movies[i].title %> (<%= moment(movies[i].releaseDate).format("YYYY") %>)
+                    <%= movies[i].title %> (<%= moment(movies[i].releaseDate).format("YYYY") %>) -
+                    <%= movies[i].actors.length %>
                 </a>
             </li>
             <% } %>

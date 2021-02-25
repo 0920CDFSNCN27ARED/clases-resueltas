@@ -1,6 +1,6 @@
 function assertIsAdmin(req, res, next) {
     if (!res.locals.user.admin) {
-        res.redirect("/");
+        res.redirect("/unauthorized");
     } else {
         next();
     }

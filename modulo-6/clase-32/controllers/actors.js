@@ -1,4 +1,4 @@
-const { Actor } = require("../database/models");
+const { Actor, Sequelize } = require("../database/models");
 
 module.exports = {
     index: async (req, res) => {

@@ -9,7 +9,7 @@ const search =
 const favoritesJSON = localStorage.getItem("favorites");
 const favorites = favoritesJSON ? JSON.parse(favoritesJSON) : [];
 
-window.addEventListener("load", async () => {
+function onDocumentLoad(){
     const form = document.getElementById("searchForm");
     const container = document.getElementById("gifContainer");
 
@@ -35,7 +35,10 @@ window.addEventListener("load", async () => {
             container.appendChild(div);
         }
     });
-});
+}
+
+
+window.addEventListener("load", onDocumentLoad);
 
 function buildImageCard(id, title, imageURL) {
     const div = document.createElement("div");
