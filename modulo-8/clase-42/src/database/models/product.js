@@ -16,6 +16,9 @@ module.exports = (sequelize, DataTypes) => {
             tableName: "products",
         }
     );
+
+    Product.CATEGORY_ALIAS = "category";
+
     Product.associate = function (models) {
         // associations can be defined here
         Product.belongsTo(models.Brand, {
@@ -29,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
         });
 
         Product.belongsTo(models.Category, {
-            as: "category",
+            as: Product.CATEGORY_ALIAS,
             foreignKey: "categoryId",
         });
 

@@ -1,5 +1,8 @@
-const { Product, Sequelize } = require("../../database/models");
+const { Product, Sequelize, sequelize } = require("../../database/models");
 const Op = Sequelize.Op;
+const { QueryTypes } = Sequelize;
+
+const GIPHY_BASE_URL = "https://api.giphy.com/v1";
 
 module.exports = {
     latest: async (req, res) => {
@@ -70,5 +73,33 @@ module.exports = {
             },
             data: products,
         });
+    },
+
+    filterByCategory: async (req, res) => {
+        //req.query.category
+
+        const categoryNameFilterKey = `$${Product.CATEGORY_ALIAS}.name$`;
+        const whereObject = {};
+        whereObject[categoryNameFilterKey] = req.query.category;
+
+        const results = await Product.findAll({
+            where: whereObject,
+            include: [Product.CATEGORY_ALIAS, "brand", "user"],
+        });
+
+        res.send(results);
+    },
+
+    gifyRandom: async (req, res) => {
+        const result = await axios.get("/gifs/random", {
+            baseURL: GIPHY_BASE_URL,
+            params: {
+                api_key: "CNiRVOVw47tBdejvxdL625WLIT49xAL6",
+                tag: "",
+                rating: "g",
+            },
+        });
+
+        res.send(result.data.data);
     },
 };
