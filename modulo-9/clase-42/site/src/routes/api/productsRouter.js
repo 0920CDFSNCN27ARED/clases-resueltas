@@ -11,9 +11,9 @@ router.get(
     "/by-category",
     productsController.filterByCategory
 ); /* GET - by-category */
-router.get(
-    "/gifyRandom",
-    productsController.gifyRandom
-); /* GET - by-category */
+router.get("/gifyRandom", productsController.gifyRandom);
+
+router.get("/count", productsController.count);
+router.get("/total-price", productsController.totalPrice);
 
 module.exports = router;
